@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="form">
+        <form id="translation-form" name="translation">
+            <textarea class="text-area" id="text-to-translate" cols="70" rows="10" name="text" placeholder="Type your text">{{text}}</textarea>
+            <button id="translation-button" onclick="request()" name="submitBtn">Translate</button>
+        </form>
+        <br>
+        <textarea class="text-area" id="translation" cols="70" rows="10" name="translation" onclick="translate()">{{translation}}</textarea>
+    </div>
+</body>
+</html>

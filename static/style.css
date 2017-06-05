@@ -1,0 +1,19 @@
+#translation-form {
+    float: left;
+    margin-right: 15px;
+}
+
+.text-area {
+    border: 4px solid cornflowerblue;
+}
+
+#translation-button {
+    border: 0 solid dodgerblue;
+    background-color: cornflowerblue;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+#form {
+    margin: 20px 160px;
+}

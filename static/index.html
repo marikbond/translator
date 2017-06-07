@@ -7,13 +7,8 @@
     <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-    <div id="form">
-        <form id="translation-form" name="translation">
-            <textarea class="text-area" id="text-to-translate" cols="70" rows="10" name="text" placeholder="Type your text">{{text}}</textarea>
-            <button id="translation-button" onclick="request()" name="submitBtn">Translate</button>
-        </form>
-        <br>
-        <textarea class="text-area" id="translation" cols="70" rows="10" name="translation" onclick="translate()">{{translation}}</textarea>
-    </div>
+    <textarea class="text-area" id="text-to-translate" cols="70" rows="10" placeholder="Type your text"></textarea>
+    <button id="translation-button" type="button" onclick="translateText()">TRANSLATE</button>
+    <textarea class="text-area" id="translation" cols="70" rows="10"></textarea>
 </body>
 </html>

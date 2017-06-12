@@ -35,11 +35,7 @@ function translate(req, res, words) {
 
 function requestHandler(req, res) {
     var url = urlUtils.parse(req.url, true);
-    if (url.pathname === '/' && req.method === 'GET') {
-        res.writeHead(200, {"Content-Type": "text/html"});
-        res.end(renderPage());
-        return;
-    } else if (url.pathname === '/' && req.method === 'POST') {
+    if (url.pathname === '/translate' && req.method === 'GET') {
         translate(req, res, req.headers.words);
         return;
     }
